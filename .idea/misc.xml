@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/concurrent/pom.xml" />
         <option value="$PROJECT_DIR$/designpattern/pom.xml" />
         <option value="$PROJECT_DIR$/myjavautils/pom.xml" />
+        <option value="$PROJECT_DIR$/data-structure/pom.xml" />
       </list>
     </option>
   </component>
