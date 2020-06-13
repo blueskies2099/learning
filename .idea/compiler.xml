@@ -7,11 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="design-pattern" />
+        <module name="data-structure" />
+        <module name="my-java-utils" />
         <module name="algorithm" />
         <module name="concurrent" />
-        <module name="my-java-utils" />
-        <module name="data-structure" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="test" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

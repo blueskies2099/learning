@@ -22,6 +22,21 @@ import codinginterviews.common.ListNode;
  */
 public class I6 {
     public int[] reversePrint(ListNode head) {
-        return null;
+        if(head == null){
+            return new int[0];
+        }
+        ListNode current = head;
+        int len = 0;
+        while (current != null){
+            current = current.next;
+            len++;
+        }
+        int[] reverse = new int[len];
+        while (head != null){
+            reverse[len-1] = head.val;
+            len--;
+            head = head.next;
+        }
+        return reverse;
     }
 }

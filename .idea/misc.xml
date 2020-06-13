@@ -12,7 +12,15 @@
         <option value="$PROJECT_DIR$/designpattern/pom.xml" />
         <option value="$PROJECT_DIR$/myjavautils/pom.xml" />
         <option value="$PROJECT_DIR$/data-structure/pom.xml" />
+        <option value="$PROJECT_DIR$/design-pattern/pom.xml" />
+        <option value="$PROJECT_DIR$/my-java-utils/pom.xml" />
+        <option value="$PROJECT_DIR$/learning-parent/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/learning-parent/test/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="OpenJDK11" project-jdk-type="JavaSDK">
