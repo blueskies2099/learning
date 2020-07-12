@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="my-java-utils" />
-        <module name="concurrent" />
-        <module name="data-structure" />
         <module name="design-pattern" />
+        <module name="functional-programming" />
+        <module name="data-structure" />
+        <module name="concurrent" />
         <module name="algorithm" />
+        <module name="my-java-utils" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

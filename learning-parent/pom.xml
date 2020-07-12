@@ -14,6 +14,7 @@
         <module>../concurrent</module>
         <module>../data-structure</module>
         <module>../design-pattern</module>
+        <module>../functional-programming</module>
     </modules>
 
     <properties>
@@ -21,11 +22,11 @@
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>23.5-jre</version> <!-- or 23.5-android for the Android flavor -->
-        </dependency>
-    </dependencies>
+<!--    <dependencies>-->
+<!--        <dependency>-->
+<!--            <groupId>com.google.guava</groupId>-->
+<!--            <artifactId>guava</artifactId>-->
+<!--            <version>23.5-jre</version> &lt;!&ndash; or 23.5-android for the Android flavor &ndash;&gt;-->
+<!--        </dependency>-->
+<!--    </dependencies>-->
 </project>
