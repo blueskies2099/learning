@@ -10,6 +10,7 @@ import java.util.stream.Stream;
  */
 public class StreamTest {
     public static void main(String[] args) {
+        //Stream
         List<Integer> lists = new ArrayList<>(){
             {
                 add(1);
@@ -26,8 +27,6 @@ public class StreamTest {
 
         List x = lists.stream().map(i -> i+1).collect(Collectors.toList());
         x.stream().forEach(System.out::println);
-
-        Comparator
 
 
 
