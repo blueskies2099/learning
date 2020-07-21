@@ -30,5 +30,6 @@ package codinginterviews;
  */
 public class I14_2 {
     public int cuttingRope(int n) {
+        return 0;
     }
 }
