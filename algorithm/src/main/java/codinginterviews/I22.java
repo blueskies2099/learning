@@ -17,6 +17,10 @@ import codinginterviews.common.ListNode;
  * 返回链表 4->5.
  */
 public class I22 {
+    /**
+     * 快慢指针
+     *
+     */
     public ListNode getKthFromEnd(ListNode head, int k) {
         if (head == null) {
             return null;
