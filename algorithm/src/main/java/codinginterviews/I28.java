@@ -43,8 +43,8 @@ import java.util.*;
  * 注意：本题与主站 101 题相同：https://leetcode-cn.com/problems/symmetric-tree/
  */
 public class I28 {
-    public boolean isSymmetric(TreeNode root) {
-        if (root == null){
+    public static boolean isSymmetric(TreeNode root) {
+        if (root == null) {
             return true;
         }
         Queue<TreeNode> queue = new LinkedList<>();
@@ -53,28 +53,45 @@ public class I28 {
         while (!queue.isEmpty()) {
             TreeNode node = queue.poll();
             list.add(node.val);
+            if (node.val == -1) {
+                continue;
+            }
             if (node.left != null) {
                 queue.offer(node.left);
             } else {
-                list.add(0);
+                queue.add(new TreeNode(-1));
             }
             if (node.right != null) {
                 queue.offer(node.right);
             } else {
-                list.add(0);
+                queue.add(new TreeNode(-1));
             }
         }
         Stack<Integer> stack = new Stack<>();
-        stack.push(list.get(1));
-        for (int i = 2; i < list.size(); i++){
-            int top = stack.pop();
-            int index = list.get(i);
-            if (top != index) {
-                stack.push(top);
-                stack.push(index);
+        list.remove(0);
+        int top, index;
+        for (int i = 0; i < list.size(); i++) {
+            if (stack.isEmpty()) {
+                stack.push(list.get(i));
+            } else {
+                top = stack.pop();
+                index = list.get(i);
+                if (top != index) {
+                    stack.push(top);
+                    stack.push(index);
+                }
             }
         }
-        return !stack.isEmpty();
+        return stack.isEmpty();
+    }
 
+    public static void main(String[] args) {
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(2);
+        root.left.left = null;
+        root.left.right = new TreeNode(3);
+        root.right.left = new TreeNode(3);
+        System.out.println(isSymmetric(root));
     }
 }
