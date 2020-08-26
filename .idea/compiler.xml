@@ -9,10 +9,11 @@
         <module name="design-pattern" />
         <module name="functional-programming" />
         <module name="data-structure" />
-        <module name="jdk-source" />
         <module name="my-java-utils" />
-        <module name="algorithm" />
         <module name="concurrent" />
+        <module name="jdk-source" />
+        <module name="tools" />
+        <module name="algorithm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

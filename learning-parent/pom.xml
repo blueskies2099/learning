@@ -16,6 +16,7 @@
         <module>../design-pattern</module>
         <module>../functional-programming</module>
         <module>../jdk-source</module>
+        <module>../tools</module>
     </modules>
 
     <properties>

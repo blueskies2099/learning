@@ -1,9 +1,12 @@
 package codinginterviews;
 
+import java.util.Stack;
+
 /**
  * @author qing
  * <p>
- * 定义栈的数据结构，请在该类型中实现一个能够得到栈的最小元素的 min 函数在该栈中，调用 min、push 及 pop 的时间复杂度都是 O(1)。
+ * 定义栈的数据结构，请在该类型中实现一个能够得到栈的最小元素的 min 函数在该栈中，调用 min、push
+ * 及 pop 的时间复杂度都是 O(1)。
  * <p>
  *  
  * <p>
@@ -33,7 +36,7 @@ public class I30 {
      * construction 构造函数
      */
     public I30() {
-
+        Stack
     }
 
     public void push(int x) {

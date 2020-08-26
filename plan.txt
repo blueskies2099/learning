@@ -3,7 +3,7 @@
 函数式编程
 AQS 线程池 ThreadLocal
 
-2 设计模式
+2 设计模式 适配器
 Spring JDK 源码
 
 3 微服务 分布式 架构设计
