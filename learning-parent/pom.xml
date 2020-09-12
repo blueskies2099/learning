@@ -17,6 +17,7 @@
         <module>../functional-programming</module>
         <module>../jdk-source</module>
         <module>../tools</module>
+        <module>../netty</module>
     </modules>
 
     <properties>

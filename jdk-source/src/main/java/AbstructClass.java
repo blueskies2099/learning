@@ -12,7 +12,7 @@ public interface  AbstructClass {
 class S implements  AbstructClass{
     @Override
     public void v() {
-        String
+
     }
 
     public static void main(String[] args) {
