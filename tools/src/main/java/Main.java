@@ -1,8 +1,7 @@
 import com.ibm.icu.text.CharsetDetector;
 import com.ibm.icu.text.CharsetMatch;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -12,8 +11,19 @@ import java.nio.file.Paths;
  */
 public class Main {
     public static void main(String[] args) {
-        File file = new File("C:\\Users\\qing\\Desktop\\新建文本文档.txt");
-        System.out.println(getFileCharsetByICU4J(file));
+        InputStream in = null;
+        try{
+            Process pro = Runtime.getRuntime().exec(new String[]{"/bin/zsh", "-c", "ps -ef|grep java"});
+            pro.waitFor();
+            in = pro.getInputStream();
+            BufferedReader read = new BufferedReader(new InputStreamReader(in));
+            String line = null;
+            while ((line = read.readLine()) != null){
+                System.out.println(line);
+            }
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     private static String getFileCharsetByICU4J(File file) {
